@@ -1,7 +1,23 @@
 aid: starofservice
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/starofservice.png
 name: StarOfService
-description: StarOfService is a company surfaced as a portfolio company of point-nine and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: StarOfService is an online local-services marketplace that connects consumers with
+  vetted service professionals across home improvement, events, wellness, lessons, and business
+  services. Headquartered in France and operating across multiple European markets, the platform
+  matches customer project requests to nearby providers and facilitates quotes and messaging between
+  them. Surfaced as a portfolio company of Point Nine and profiled in the API Evangelist network;
+  the company exposes a consumer web marketplace and has no public developer API surface at this time.
 url: https://raw.githubusercontent.com/api-evangelist/starofservice/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +27,28 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Marketplace
+- Local Services
+- Home Services
+- Professional Services
+- Consumer
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/starofservice-domain-security.yml
 - type: Website
   url: http://www.starofservice.com
